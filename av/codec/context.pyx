@@ -603,7 +603,7 @@ cdef class CodecContext(object):
             return self.ptr.rc_min_rate if self.ptr.rc_min_rate > 0 else None
 
         def __set__(self, int value):
-            self.ptr.rc_min_rate = valuee
+            self.ptr.rc_min_rate = value
 
     property bit_rate_tolerance:
         def __get__(self):
